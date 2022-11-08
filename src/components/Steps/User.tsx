@@ -41,7 +41,7 @@ const User = () => {
       justifyContent="center"
       style={{ minHeight: "100vh" }}
     >
-        <FormControl sx={{ mb: 2 }} fullWidth>
+        <FormControl sx={{ mb: 2, width: 300 }} fullWidth>
             <InputLabel id="demo-simple-select-error-label">
               User:{" "}
             </InputLabel>
