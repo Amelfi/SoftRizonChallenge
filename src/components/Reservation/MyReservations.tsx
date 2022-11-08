@@ -13,12 +13,14 @@ import { useNavigate } from "react-router-dom";
 import {
   getReservationByUser,
   cancelReservation,
-  updateReservation,
   getReservationById,
 } from "../../redux/actions";
 import { useEffect } from "react";
 import { Dispatch } from "redux";
 import { useDispatch, useSelector } from "react-redux/es/exports";
+import Swal from 'sweetalert2'
+import dayjs, { Dayjs } from "dayjs";
+
 const MyReservations = () => {
   const dispatch = useDispatch<Dispatch<any>>();
 const navigation= useNavigate()
@@ -28,9 +30,31 @@ const navigation= useNavigate()
     dispatch(getReservationByUser(userId));
   }, [dispatch]);
 
-  useEffect(() => {}, []);
-  const handleDelete = (id: number) => {
-    dispatch(cancelReservation(id));
+  const handleDelete = (id: number, dateFrom: string) => {
+    console.log('first')
+    if(dayjs(`${dateFrom} 12:00`).diff(dayjs(), 'hours') > 24){
+      Swal.fire({
+        title: 'Are you sure?',
+        text: "Do you want to delete the reservation?",
+        showCancelButton: true,
+        confirmButtonText: 'Yes',
+        icon: 'warning',
+      }).then((result) => {
+        /* Read more about isConfirmed, isDenied below */
+        if (result.isConfirmed) {
+          dispatch(cancelReservation(id));
+          Swal.fire('Success!', 'Reservation canceled!', 'success')
+          console.log(rows)
+        }
+      })
+
+    } else {
+      Swal.fire({
+        title: 'Sorry!',
+        text: "You can't cancel a reservation 24 hours before the booked date!",
+        icon: 'warning',
+      })
+    }
   };
     const handleUpdate = (id: number)=>{
         dispatch(getReservationById(id))
@@ -78,10 +102,9 @@ const navigation= useNavigate()
                           color="primary"
                           component="label"
                           onClick={() => {
-                            handleDelete(row.id);
+                            handleDelete(row.id, row.dateFrom);
                           }}
                         >
-                        <input hidden accept="image/*" type="file" />
                           <DeleteRoundedIcon />
                         </IconButton>
                     

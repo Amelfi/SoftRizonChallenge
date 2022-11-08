@@ -58,7 +58,6 @@ export default function reducer(state = initialState, { type, payload }: Action)
         reservationId: payload,
       };
     case "POST_RESERVATION":
-      console.log('first')
       return {
         ...state
         

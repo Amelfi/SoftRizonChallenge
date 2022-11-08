@@ -23,13 +23,15 @@ import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 import dayjs, { Dayjs } from "dayjs";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
+import Swal from "sweetalert2";
 
 const Reservation = () => {
   const { id } = useParams();
   const dispatch = useDispatch<Dispatch<any>>();
   const room: any = useSelector<any>((state) => state.rooms);
   const reservationId: any = useSelector<any>((state) => state.reservationId);
+  const navigation = useNavigate();
   interface iinitialValues {
     countryId: number;
     countryName: string;
@@ -95,7 +97,7 @@ const Reservation = () => {
     e.preventDefault();
 
     if (dateFrom !== null && dateTo !== null) {
-      if(id === undefined){
+      if (id === undefined) {
         dispatch(
           postReservation({
             ...form,
@@ -103,13 +105,34 @@ const Reservation = () => {
             dateTo: dateTo.format("YYYY-MM-DD"),
           })
         );
+
+        Swal.fire({
+          title: "Success!",
+          text: "Your reservation has been saved!",
+          showCancelButton: true,
+          confirmButtonText: "Go to my reservations!",
+          cancelButtonText: "Okey!",
+          icon: "success",
+        }).then((result) => {
+          if (result.isConfirmed) {
+            navigation(`/myreservation`);
+          } else if (result.isDismissed) {
+            setForm({
+              ...form,
+              dateFrom: null,
+              dateTo: null,
+              roomId: 0,
+              roomNumber: "None",
+            });
+          }
+        });
       } else {
         dispatch(
           updateReservation({
             id,
             dateFrom: dateFrom.format("YYYY-MM-DD"),
             dateTo: dateTo.format("YYYY-MM-DD"),
-            roomId, 
+            roomId,
             roomNumber,
           })
         );
