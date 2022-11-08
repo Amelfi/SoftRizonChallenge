@@ -1,0 +1,574 @@
+{
+  "countries": [
+    {
+      "id": 1,
+      "countryName": "Mexico"
+    },
+    {
+      "id": 2,
+      "countryName": "Canada"
+    },
+    {
+      "id": 3,
+      "countryName": "Cuba"
+    }
+  ],
+  "hotels": [
+    {
+      "id": 1,
+      "hotelName": "Hodelpa",
+      "countryId": 1
+    },
+    {
+      "id": 2,
+      "hotelName": "Glamour",
+      "countryId": 3
+    },
+    {
+      "id": 3,
+      "hotelName": "Queen",
+      "countryId": 2
+    },
+    {
+      "id": 4,
+      "hotelName": "Paramount Hotel",
+      "countryId": 3
+    },
+    {
+      "id": 5,
+      "hotelName": "La Parisienne",
+      "countryId": 1
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "userName": "Carlos Batista"
+    },
+    {
+      "id": 2,
+      "userName": "Jose Perez "
+    },
+    {
+      "id": 3,
+      "userName": "Maria Castillo"
+    }
+  ],
+  "rooms": [
+    {
+      "id": 1,
+      "roomNumber": 101,
+      "hotelId": 1
+    },
+    {
+      "id": 2,
+      "roomNumber": 102,
+      "hotelId": 1
+    },
+    {
+      "id": 3,
+      "roomNumber": 103,
+      "hotelId": 1
+    },
+    {
+      "id": 4,
+      "roomNumber": 104,
+      "hotelId": 1
+    },
+    {
+      "id": 5,
+      "roomNumber": 105,
+      "hotelId": 1
+    },
+    {
+      "id": 6,
+      "roomNumber": 106,
+      "hotelId": 1
+    },
+    {
+      "id": 7,
+      "roomNumber": 107,
+      "hotelId": 1
+    },
+    {
+      "id": 8,
+      "roomNumber": 108,
+      "hotelId": 1
+    },
+    {
+      "id": 9,
+      "roomNumber": 109,
+      "hotelId": 1
+    },
+    {
+      "id": 10,
+      "roomNumber": 201,
+      "hotelId": 1
+    },
+    {
+      "id": 11,
+      "roomNumber": 202,
+      "hotelId": 1
+    },
+    {
+      "id": 12,
+      "roomNumber": 203,
+      "hotelId": 1
+    },
+    {
+      "id": 13,
+      "roomNumber": 204,
+      "hotelId": 1
+    },
+    {
+      "id": 14,
+      "roomNumber": 205,
+      "hotelId": 1
+    },
+    {
+      "id": 15,
+      "roomNumber": 206,
+      "hotelId": 1
+    },
+    {
+      "id": 16,
+      "roomNumber": 207,
+      "hotelId": 1
+    },
+    {
+      "id": 17,
+      "roomNumber": 208,
+      "hotelId": 1
+    },
+    {
+      "id": 18,
+      "roomNumber": 209,
+      "hotelId": 1
+    },
+    {
+      "id": 19,
+      "roomNumber": 301,
+      "hotelId": 1
+    },
+    {
+      "id": 20,
+      "roomNumber": 302,
+      "hotelId": 1
+    },
+    {
+      "id": 21,
+      "roomNumber": 101,
+      "hotelId": 2
+    },
+    {
+      "id": 22,
+      "roomNumber": 102,
+      "hotelId": 2
+    },
+    {
+      "id": 23,
+      "roomNumber": 103,
+      "hotelId": 2
+    },
+    {
+      "id": 24,
+      "roomNumber": 104,
+      "hotelId": 2
+    },
+    {
+      "id": 25,
+      "roomNumber": 105,
+      "hotelId": 2
+    },
+    {
+      "id": 26,
+      "roomNumber": 106,
+      "hotelId": 2
+    },
+    {
+      "id": 27,
+      "roomNumber": 107,
+      "hotelId": 2
+    },
+    {
+      "id": 28,
+      "roomNumber": 108,
+      "hotelId": 2
+    },
+    {
+      "id": 29,
+      "roomNumber": 109,
+      "hotelId": 2
+    },
+    {
+      "id": 30,
+      "roomNumber": 201,
+      "hotelId": 2
+    },
+    {
+      "id": 31,
+      "roomNumber": 202,
+      "hotelId": 2
+    },
+    {
+      "id": 32,
+      "roomNumber": 203,
+      "hotelId": 2
+    },
+    {
+      "id": 33,
+      "roomNumber": 204,
+      "hotelId": 2
+    },
+    {
+      "id": 34,
+      "roomNumber": 205,
+      "hotelId": 2
+    },
+    {
+      "id": 35,
+      "roomNumber": 206,
+      "hotelId": 2
+    },
+    {
+      "id": 36,
+      "roomNumber": 207,
+      "hotelId": 2
+    },
+    {
+      "id": 37,
+      "roomNumber": 208,
+      "hotelId": 2
+    },
+    {
+      "id": 38,
+      "roomNumber": 209,
+      "hotelId": 2
+    },
+    {
+      "id": 39,
+      "roomNumber": 301,
+      "hotelId": 2
+    },
+    {
+      "id": 40,
+      "roomNumber": 302,
+      "hotelId": 2
+    },
+    {
+      "id": 41,
+      "roomNumber": 101,
+      "hotelId": 3
+    },
+    {
+      "id": 42,
+      "roomNumber": 102,
+      "hotelId": 3
+    },
+    {
+      "id": 43,
+      "roomNumber": 103,
+      "hotelId": 3
+    },
+    {
+      "id": 44,
+      "roomNumber": 104,
+      "hotelId": 3
+    },
+    {
+      "id": 45,
+      "roomNumber": 105,
+      "hotelId": 3
+    },
+    {
+      "id": 46,
+      "roomNumber": 106,
+      "hotelId": 3
+    },
+    {
+      "id": 47,
+      "roomNumber": 107,
+      "hotelId": 3
+    },
+    {
+      "id": 48,
+      "roomNumber": 108,
+      "hotelId": 3
+    },
+    {
+      "id": 49,
+      "roomNumber": 109,
+      "hotelId": 3
+    },
+    {
+      "id": 50,
+      "roomNumber": 201,
+      "hotelId": 3
+    },
+    {
+      "id": 51,
+      "roomNumber": 202,
+      "hotelId": 3
+    },
+    {
+      "id": 52,
+      "roomNumber": 203,
+      "hotelId": 3
+    },
+    {
+      "id": 53,
+      "roomNumber": 204,
+      "hotelId": 3
+    },
+    {
+      "id": 54,
+      "roomNumber": 205,
+      "hotelId": 3
+    },
+    {
+      "id": 55,
+      "roomNumber": 206,
+      "hotelId": 3
+    },
+    {
+      "id": 56,
+      "roomNumber": 207,
+      "hotelId": 3
+    },
+    {
+      "id": 57,
+      "roomNumber": 208,
+      "hotelId": 3
+    },
+    {
+      "id": 58,
+      "roomNumber": 209,
+      "hotelId": 3
+    },
+    {
+      "id": 59,
+      "roomNumber": 301,
+      "hotelId": 3
+    },
+    {
+      "id": 60,
+      "roomNumber": 302,
+      "hotelId": 3
+    },
+    {
+      "id": 61,
+      "roomNumber": 101,
+      "hotelId": 4
+    },
+    {
+      "id": 62,
+      "roomNumber": 102,
+      "hotelId": 4
+    },
+    {
+      "id": 63,
+      "roomNumber": 103,
+      "hotelId": 4
+    },
+    {
+      "id": 64,
+      "roomNumber": 104,
+      "hotelId": 4
+    },
+    {
+      "id": 65,
+      "roomNumber": 105,
+      "hotelId": 4
+    },
+    {
+      "id": 66,
+      "roomNumber": 106,
+      "hotelId": 4
+    },
+    {
+      "id": 67,
+      "roomNumber": 107,
+      "hotelId": 4
+    },
+    {
+      "id": 68,
+      "roomNumber": 108,
+      "hotelId": 4
+    },
+    {
+      "id": 69,
+      "roomNumber": 109,
+      "hotelId": 4
+    },
+    {
+      "id": 70,
+      "roomNumber": 201,
+      "hotelId": 4
+    },
+    {
+      "id": 71,
+      "roomNumber": 202,
+      "hotelId": 4
+    },
+    {
+      "id": 72,
+      "roomNumber": 203,
+      "hotelId": 4
+    },
+    {
+      "id": 73,
+      "roomNumber": 204,
+      "hotelId": 4
+    },
+    {
+      "id": 74,
+      "roomNumber": 205,
+      "hotelId": 4
+    },
+    {
+      "id": 75,
+      "roomNumber": 206,
+      "hotelId": 4
+    },
+    {
+      "id": 76,
+      "roomNumber": 207,
+      "hotelId": 4
+    },
+    {
+      "id": 77,
+      "roomNumber": 208,
+      "hotelId": 4
+    },
+    {
+      "id": 78,
+      "roomNumber": 209,
+      "hotelId": 4
+    },
+    {
+      "id": 79,
+      "roomNumber": 301,
+      "hotelId": 4
+    },
+    {
+      "id": 80,
+      "roomNumber": 302,
+      "hotelId": 4
+    },
+    {
+      "id": 81,
+      "roomNumber": 101,
+      "hotelId": 5
+    },
+    {
+      "id": 82,
+      "roomNumber": 102,
+      "hotelId": 5
+    },
+    {
+      "id": 83,
+      "roomNumber": 103,
+      "hotelId": 5
+    },
+    {
+      "id": 84,
+      "roomNumber": 104,
+      "hotelId": 5
+    },
+    {
+      "id": 85,
+      "roomNumber": 105,
+      "hotelId": 5
+    },
+    {
+      "id": 86,
+      "roomNumber": 106,
+      "hotelId": 5
+    },
+    {
+      "id": 87,
+      "roomNumber": 107,
+      "hotelId": 5
+    },
+    {
+      "id": 88,
+      "roomNumber": 108,
+      "hotelId": 5
+    },
+    {
+      "id": 89,
+      "roomNumber": 109,
+      "hotelId": 5
+    },
+    {
+      "id": 90,
+      "roomNumber": 201,
+      "hotelId": 5
+    },
+    {
+      "id": 91,
+      "roomNumber": 202,
+      "hotelId": 5
+    },
+    {
+      "id": 92,
+      "roomNumber": 203,
+      "hotelId": 5
+    },
+    {
+      "id": 93,
+      "roomNumber": 204,
+      "hotelId": 5
+    },
+    {
+      "id": 94,
+      "roomNumber": 205,
+      "hotelId": 5
+    },
+    {
+      "id": 95,
+      "roomNumber": 206,
+      "hotelId": 5
+    },
+    {
+      "id": 96,
+      "roomNumber": 207,
+      "hotelId": 5
+    },
+    {
+      "id": 97,
+      "roomNumber": 208,
+      "hotelId": 5
+    },
+    {
+      "id": 98,
+      "roomNumber": 209,
+      "hotelId": 5
+    },
+    {
+      "id": 99,
+      "roomNumber": 301,
+      "hotelId": 5
+    },
+    {
+      "id": 100,
+      "roomNumber": 302,
+      "hotelId": 5
+    }
+  ],
+  "reservation": [
+    {
+      "countryId": 1,
+      "countryName": "Mexico",
+      "hotelId": 1,
+      "hotelName": "Hodelpa",
+      "dateFrom": "2022-11-10",
+      "dateTo": "2022-11-14",
+      "roomId": 1,
+      "roomNumber": 101,
+      "userId": 2,
+      "canceled": false,
+      "id": 1
+    }
+  ]
+}
